@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+<script>
+	function Calculator(a,b)
+	{
+		this.a = a;
+		this.b = b;
+		var counter1 = 0;
+		var counter2 = 1;
+		
+		this.add = function(){
+			alert(counter2 + counter1);
+			return (this.a + this.b + counter1);
+		
+		}
+		this.subtract = function(){
+		alert(counter2 + counter1);
+			return (this.a - this.b - counter1);
+		
+		}
+		this.multiply = function(){
+		alert(counter2 + counter1);
+			return (this.a * this.b * counter2);
+		
+		}
+		this.divide = function(){
+		alert(counter2 + counter1);
+			return (this.a / this.b);
+		
+		}
+	}
+	var calc1 = new Calculator(5,3);
+	alert("Addition is " + calc1.add() + "Subtraction is " + calc1.subtract() + "Multiplication is " + calc1.multiply() + "Division is " + calc1.divide());
+	
+</script>
+</body>
+</html>
